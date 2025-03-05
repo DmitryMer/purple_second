@@ -1,7 +1,6 @@
 import Button from "./components/Button/Button";
 import { MouseEvent, useState } from "react";
 import Input from "./components/Input/Input";
-import { Link } from "react-router";
 
 function App() {
   const [counter, setCounter] = useState<number>(0);
@@ -16,10 +15,6 @@ function App() {
         Кнопка
       </Button>
       <Input placeholder="email" />
-      <div>
-        <Link to="/">Меню</Link>
-        <Link to="/cart">Корзина</Link>
-      </div>
     </>
   );
 }
